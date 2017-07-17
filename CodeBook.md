@@ -7,7 +7,20 @@ This document provides the structure of resultant data from the script `run_anal
 4. Calculate the summary by their subject and activity as identifier
 5. Appropriately labels the data set with descriptive variable names and output to file
 
-## Data
+## Variables
 The `tidied_averages.txt` is a space delimited file. Storing the cleaned and averaged data from the data for the project: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 The first row is the variable names, with subject and activity as identifier.
+
+  - Subject
+  An integer from 1-30
+  
+  - activity
+	- `WALKING`: subject was walking
+	- `WALKING_UPSTAIRS`: subject was walking upstairs
+	- `WALKING_DOWNSTAIRS`: subject was walking downstairs
+	- `SITTING`: subject was sitting
+	- `STANDING`: subject was standing
+	- `LAYING`: subject was laying
+  
+  
