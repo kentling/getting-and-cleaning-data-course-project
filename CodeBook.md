@@ -1,4 +1,4 @@
-# Code book for Coursera Getting and Cleaning Data course project
+s# Code book for Coursera Getting and Cleaning Data course project
 
 This document provides the structure of resultant data from the script `run_analysis.R`. The procedure of script performs 5 main steps:
 1. Reading  the activity types and features as descriptive fields to the main train and test dataset respectively.
@@ -12,8 +12,8 @@ The `tidied_averages.txt` is a space delimited file. Storing the cleaned and ave
 
 The first row is the variable names, with subject and activity as identifier.
 
-  - Subject
-  An integer from 1-30
+  - subject
+  	- An integer from 1-30
   
   - activity
 	- `WALKING`: subject was walking
@@ -22,5 +22,34 @@ The first row is the variable names, with subject and activity as identifier.
 	- `SITTING`: subject was sitting
 	- `STANDING`: subject was standing
 	- `LAYING`: subject was laying
-  
-  
+  - Two Domain of measurements
+  	- Time-domain signals : `TimeDomain` were captured from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
+	- Frequency-domain signals : `FrequencyDomain` were captured from Fast Fourier Transform (FFT) applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.
+
+The below signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+- TimeDomain.BodyAcceleration-XYZ
+- TimeDomain.GravityAcceleration-XYZ
+- TimeDomain.BodyAccelerationJerk-XYZ
+- TimeDomain.BodyAngularSpeed-XYZ
+- TimeDomain.BodyAngularAcceleration-XYZ
+- TimeDomain.BodyAccelerationMagnitude
+- TimeDomain.BodyAccelerationJerkMagnitude
+- TimeDomain.BodyAngularSpeedMagnitude
+- TimeDomain.BodyAngularAccelerationMagnitude
+- FrequencyDomain.BodyAcceleration-XYZ
+- FrequencyDomain.BodyAccelerationJerk-XYZ
+- FrequencyDomain.BodyAngularSpeed-XYZ
+- FrequencyDomain.BodyAccelerationMagnitude
+- FrequencyDomain.BodyBodyAccelerationJerkMagnitude
+- FrequencyDomain.BodyBodyAngularSpeedMagnitude
+- FrequencyDomain.BodyBodyAngularAccelerationMagnitude
+
+
+The set of variables that were estimated from these signals are: 
+
+- mean(): Mean value
+- std(): Standard deviation
+
+
