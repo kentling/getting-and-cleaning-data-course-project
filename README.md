@@ -12,8 +12,8 @@
 
 # How the script works
 The procedure of this script performs 5 main steps:
-1.Reading the activity types and features as descriptive fields to the main train and test dataset respectively.
-2. Reading train and test dataset, combine with the fields in step 1, and select the data with mean and standard deviation only.
-3. Merging the two train and test data by activity ID
-4. Calculate the summary by their subject and activity as identifier
-5. Appropriately labels the data set with descriptive variable names and output to file
+- 1.Reading the activity types and features as descriptive fields to the main train and test dataset respectively.
+- 2. Reading train and test dataset, combine with the fields in step 1, and select the data with mean and standard deviation only.
+- 3. Merging the two train and test data by activity ID
+- 4. Calculate the summary by their subject and activity as identifier
+- 5. Appropriately labels the data set with descriptive variable names and output to file
