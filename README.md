@@ -1,4 +1,4 @@
-# This is a repository of course project from week 4 Getting and Cleaning Data, and contains the following files
+This is a repository of course project from week 4 Getting and Cleaning Data, and contains the following files
 - `README.md` An overview of this repository
 - `CodeBook.md` Describe the variables of resultant file `tidied_averages.txt`
 - `run_analysis.R` the R script for data cleaning and others required by the course project.
