@@ -1,4 +1,4 @@
-s# Code book for Coursera Getting and Cleaning Data course project
+# Code book for Coursera Getting and Cleaning Data course project
 
 This document provides the structure of resultant data from the script `run_analysis.R`. The procedure of script performs 5 main steps:
 1. Reading  the activity types and features as descriptive fields to the main train and test dataset respectively.
@@ -11,6 +11,7 @@ This document provides the structure of resultant data from the script `run_anal
 The `tidied_averages.txt` is a space delimited file. Storing the cleaned and averaged data from the data for the project: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 The first row is the variable names, with subject and activity as identifier.
+All variables were averaged from source dataset, normalised in floating point values.
 
   - subject
   	- An integer from 1-30
